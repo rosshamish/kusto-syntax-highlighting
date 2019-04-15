@@ -1,3 +1,8 @@
+### v1.1.1
+
+- Allow whitespace between function name and opening paren, e.g. `materialize (` is now supported. Before, it had to be `materialize(`.
+- All functions are scoped as `support.function` now, instead of some being `keyword.function.kusto`, which, for many themes, shares a color with `keyword.operator.kusto` which does not parse well for humans.
+
 ### v1.1.0
 
 > First version forked off https://github.com/josin/kusto-syntax-highlighting
