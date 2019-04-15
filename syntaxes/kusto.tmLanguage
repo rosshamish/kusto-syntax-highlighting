@@ -383,6 +383,12 @@
                 <string>constant.numeric</string>
             </dict>
             <dict>
+                <key>match</key>
+                <string>\b(true|false)\b</string>
+                <key>name</key>
+                <string>constant.language</string>
+            </dict>
+            <dict>
                 <!-- Deprecated keywords
                 -->
                 <key>match</key>

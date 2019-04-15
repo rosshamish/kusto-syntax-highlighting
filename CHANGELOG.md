@@ -1,3 +1,7 @@
+### v1.1.2
+
+- Add `true`, `false` as constants. These were accidentally removed when forking.
+
 ### v1.1.1
 
 - Allow whitespace between function name and opening paren, e.g. `materialize (` is now supported. Before, it had to be `materialize(`.
