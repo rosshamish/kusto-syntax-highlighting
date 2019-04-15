@@ -51,7 +51,7 @@
                     -  https://docs.microsoft.com/en-us/azure/kusto/query/evaluateoperator
                     -->
                     <key>match</key>
-                    <string>\b(autocluster|bag_unpack|basket|dcount_intersect|diffpatterns|narrow|pivot|preview|rolling_percentile|sql_request)(?=\()</string>
+                    <string>\b(autocluster|bag_unpack|basket|dcount_intersect|diffpatterns|narrow|pivot|preview|rolling_percentile|sql_request)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -83,14 +83,12 @@
                         <key>name</key>
                         <string>keyword.other.kusto</string>
                     </dict>
-                    
-                    
                 <dict>
                     <!-- Tabular operators: make-series (series analysis functions)
                     -  https://docs.microsoft.com/en-us/azure/kusto/query/make-seriesoperator
                     -->
                     <key>match</key>
-                    <string>\b(series_fir|series_iir|series_fit_line|series_fit_line_dynamic|series_fit_2lines|series_fit_2lines_dynamic|series_outliers|series_periods_detect|series_periods_validate|series_stats_dynamic|series_stats)(?=\()</string>
+                    <string>\b(series_fir|series_iir|series_fit_line|series_fit_line_dynamic|series_fit_2lines|series_fit_2lines_dynamic|series_outliers|series_periods_detect|series_periods_validate|series_stats_dynamic|series_stats)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -99,7 +97,7 @@
                     -  https://docs.microsoft.com/en-us/azure/kusto/query/make-seriesoperator
                     -->
                     <key>match</key>
-                    <string>\b(series_fill_backward|series_fill_const|series_fill_forward|series_fill_linear)(?=\()</string>
+                    <string>\b(series_fill_backward|series_fill_const|series_fill_forward|series_fill_linear)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -157,9 +155,9 @@
                   -  https://docs.microsoft.com/en-us/azure/kusto/query/clusterfunction
                 -->
                 <key>match</key>
-                <string>\b(cluster|database|materialize|table|toscalar)(?=\()</string>
+                <string>\b(cluster|database|materialize|table|toscalar)(?=\W*\()</string>
                 <key>name</key>
-                <string>keyword.function.kusto</string>
+                <string>support.function</string>
             </dict>
             <dict>
                 <!-- Scalar operators
@@ -178,7 +176,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#binary-functions
                     -->
                     <key>match</key>
-                    <string>\b(binary_and|binary_not|binary_or|binary_shift_left|binary_shift_right|binary_xor)(?=\()</string>
+                    <string>\b(binary_and|binary_not|binary_or|binary_shift_left|binary_shift_right|binary_xor)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -187,7 +185,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#binary-functions
                     -->
                     <key>match</key>
-                    <string>\b(tobool|todatetime|todouble|toreal|tostring|totimestamp)(?=\()</string>
+                    <string>\b(tobool|todatetime|todouble|toreal|tostring|totimestamp)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -196,7 +194,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#datetimetimespan-functions
                     -->
                     <key>match</key>
-                    <string>\b(ago|datetime_add|datetime_part|datetime_diff|dayofmonth|dayofweek|dayofyear|endofday|endofmonth|endofweek|endofyear|format_datetime|format_timespan|getmonth|getyear|hourofday|make_datetime|make_timespan|monthofyear|now|startofday|startofmonth|startofweek|startofyear|todatetime|totimespan|weekofyear)(?=\()</string>
+                    <string>\b(ago|datetime_add|datetime_part|datetime_diff|dayofmonth|dayofweek|dayofyear|endofday|endofmonth|endofweek|endofyear|format_datetime|format_timespan|getmonth|getyear|hourofday|make_datetime|make_timespan|monthofyear|now|startofday|startofmonth|startofweek|startofyear|todatetime|totimespan|weekofyear)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -205,7 +203,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#dynamicarray-functions
                     -->
                     <key>match</key>
-                    <string>\b(array_concat|array_length|array_slice|array_split|bag_keys|pack|pack_all|pack_array|repeat|treepath|zip)(?=\()</string>
+                    <string>\b(array_concat|array_length|array_slice|array_split|bag_keys|pack|pack_all|pack_array|repeat|treepath|zip)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -214,7 +212,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#window-scalar-functions
                     -->
                     <key>match</key>
-                    <string>\b(next|prev|row_cumsum|row_number)(?=\()</string>
+                    <string>\b(next|prev|row_cumsum|row_number)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -223,7 +221,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#flow-control-functions
                     -->
                     <key>match</key>
-                    <string>\b(toscalar)(?=\()</string>
+                    <string>\b(toscalar)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -232,7 +230,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#mathematical-functions
                     -->
                     <key>match</key>
-                    <string>\b(abs|acos|asin|atan|atan2|beta_cdf|beta_inv|beta_pdf|cos|cot|degrees|exp|exp100|exp2|gamma|hash|isfinite|isinf|isnan|log|log10|log2|loggamma|not|pi|pow|radians|rand|range|round|sign|sin|sqrt|tan|welch_test)(?=\()</string>
+                    <string>\b(abs|acos|asin|atan|atan2|beta_cdf|beta_inv|beta_pdf|cos|cot|degrees|exp|exp100|exp2|gamma|hash|isfinite|isinf|isnan|log|log10|log2|loggamma|not|pi|pow|radians|rand|range|round|sign|sin|sqrt|tan|welch_test)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -241,7 +239,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#metadata-functions
                     -->
                     <key>match</key>
-                    <string>\b(column_ifexists|current_principal|cursor_after|extent_id|extent_tags|ingestion_time)(?=\()</string>
+                    <string>\b(column_ifexists|current_principal|cursor_after|extent_id|extent_tags|ingestion_time)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -250,7 +248,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#rounding-functions
                     -->
                     <key>match</key>
-                    <string>\b(bin|bin_at|ceiling|floor)(?=\()</string>
+                    <string>\b(bin|bin_at|ceiling|floor)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -259,7 +257,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#conditional-functions
                     -->
                     <key>match</key>
-                    <string>\b(case|coalesce|iif|iff|max_of|min_of)(?=\()</string>
+                    <string>\b(case|coalesce|iif|iff|max_of|min_of)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -268,7 +266,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#series-element-wise-functions
                     -->
                     <key>match</key>
-                    <string>\b(series_add|series_divide|series_equals|series_greater|series_greater_equals|series_less|series_less_equals|series_multiply|series_not_equals|series_subtract)(?=\()</string>
+                    <string>\b(series_add|series_divide|series_equals|series_greater|series_greater_equals|series_less|series_less_equals|series_multiply|series_not_equals|series_subtract)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -277,7 +275,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#series-processing-functions
                     -->
                     <key>match</key>
-                    <string>\b(series_decompose|series_decompose_anomalies|series_decompose_forecast|series_fill_backward|series_fill_const|series_fill_forward|series_fill_linear|series_fir|series_fit_2lines|series_fit_2lines_dynamic|series_fit_line|series_fit_line_dynamic|series_iir|series_outliers|series_periods_detect|series_periods_validate|series_seasonal|series_stats|series_stats_dynamic)(?=\()</string>
+                    <string>\b(series_decompose|series_decompose_anomalies|series_decompose_forecast|series_fill_backward|series_fill_const|series_fill_forward|series_fill_linear|series_fir|series_fit_2lines|series_fit_2lines_dynamic|series_fit_line|series_fit_line_dynamic|series_iir|series_outliers|series_periods_detect|series_periods_validate|series_seasonal|series_stats|series_stats_dynamic)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -286,7 +284,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#string-functions
                     -->
                     <key>match</key>
-                    <string>\b(base64_decodestring|base64_encodestring|countof|extract|extract_all|extractjson|indexof|isempty|isnotempty|isnotnull|isnull|parse_ipv4|parse_json|parse_url|parse_urlquery|parse_version|replace|reverse|split|strcat|strcat_delim|strcmp|strlen|strrep|substring|toupper|translate|trim|trim_end|trim_start|url_decode|url_encode)(?=\()</string>
+                    <string>\b(base64_decodestring|base64_encodestring|countof|extract|extract_all|extractjson|indexof|isempty|isnotempty|isnotnull|isnull|parse_ipv4|parse_json|parse_url|parse_urlquery|parse_version|replace|reverse|split|strcat|strcat_delim|strcmp|strlen|strrep|substring|toupper|translate|trim|trim_end|trim_start|url_decode|url_encode)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -295,7 +293,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#type-functions
                     -->
                     <key>match</key>
-                    <string>\b(gettype)(?=\()</string>
+                    <string>\b(gettype)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -304,7 +302,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#scalar-aggregation-functions
                     -->
                     <key>match</key>
-                    <string>\b(dcount_hll|hll_merge|percentile_tdigest|percentrank_tdigest|rank_tdigest|tdigest_merge)(?=\()</string>
+                    <string>\b(dcount_hll|hll_merge|percentile_tdigest|percentrank_tdigest|rank_tdigest|tdigest_merge)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -313,7 +311,7 @@
                     -  https://docs.microsoft.com/en-us/azure/kusto/query/any-aggfunction
                 -->
                 <key>match</key>
-                <string>\b(any|arg_max|arg_min|avg|avgif|buildschema|count|countif|dcount|dcountif|hll|hll_merge|make_bag|make_list|make_set|max|min|percentiles|stdev|stdevif|stdevp|sum|sumif|tdigest|tdigest_merge|variance|varianceif|variancep)(?=\()</string>
+                <string>\b(any|arg_max|arg_min|avg|avgif|buildschema|count|countif|dcount|dcountif|hll|hll_merge|make_bag|make_list|make_set|max|min|percentiles|stdev|stdevif|stdevp|sum|sumif|tdigest|tdigest_merge|variance|varianceif|variancep)(?=\W*\()</string>
                 <key>name</key>
                 <string>support.function</string>
             </dict>
@@ -322,7 +320,7 @@
                     -  https://docs.microsoft.com/en-us/azure/kusto/query/windowsfunctions
                 -->
                 <key>match</key>
-                <string>\b(next|prev|row_cumsum|row_number)(?=\()</string>
+                <string>\b(next|prev|row_cumsum|row_number)(?=\W*\()</string>
                 <key>name</key>
                 <string>support.function</string>
             </dict>
@@ -331,7 +329,7 @@
                     -  https://docs.microsoft.com/en-us/azure/kusto/query/useranalytics
                 -->
                 <key>match</key>
-                <string>\b(activity_counts_metrics|sliding_window_counts|activity_metrics|new_activity_metrics|activity_engagement|active_users_count|session_count|funnel_sequence|funnel_sequence_completion)(?=\()</string>
+                <string>\b(activity_counts_metrics|sliding_window_counts|activity_metrics|new_activity_metrics|activity_engagement|active_users_count|session_count|funnel_sequence|funnel_sequence_completion)(?=\W*\()</string>
                 <key>name</key>
                 <string>support.function</string>
             </dict>
@@ -353,7 +351,7 @@
                 <key>name</key>
                 <string>keyword.operator.kusto</string>
             </dict>
-            
+
             <dict>
                 <key>match</key>
                 <string>".*?"</string>
