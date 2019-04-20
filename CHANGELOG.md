@@ -1,3 +1,12 @@
+### v1.1.3
+
+- project-away, project-rename
+- skipvalidation
+- conversions (toint, tohex, ...)
+- deprecated todynamic (in favor of parse_json)
+- strcat_array. deprecated array_strcat
+- deprecated makelist, makeset, make_dictionary
+
 ### v1.1.2
 
 - Add `true`, `false` as constants. These were accidentally removed when forking.

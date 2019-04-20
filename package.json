@@ -1,8 +1,8 @@
 {
   "name": "kuskus-kusto-syntax-highlighting",
   "displayName": "[kuskus] Kusto Syntax Highlighting",
-  "description": "Support for the Kusto language syntax in Visual Studio Code.",
-  "version": "1.1.2",
+  "description": "Kusto Syntax Highlighting for Visual Studio Code.",
+  "version": "1.1.3",
   "publisher": "rosshamish",
   "homepage": "https://github.com/rosshamish/kusto-syntax-highlighting",
   "icon": "images/kusto_logo.png",
