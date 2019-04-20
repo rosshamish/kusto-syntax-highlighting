@@ -203,7 +203,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#dynamicarray-functions
                     -->
                     <key>match</key>
-                    <string>\b(array_concat|array_length|array_slice|array_split|bag_keys|pack|pack_all|pack_array|repeat|treepath|zip)(?=\W*\()</string>
+                    <string>\b(array_concat|array_length|array_slice|array_split|array_strcat|bag_keys|pack|pack_all|pack_array|repeat|treepath|zip)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -392,7 +392,7 @@
                 <!-- Deprecated keywords
                 -->
                 <key>match</key>
-                <string>\b(make_dictionary|makelist|makeset|mvexpand)\b</string>
+                <string>\b(array_strcat|make_dictionary|makelist|makeset|mvexpand)\b</string>
                 <key>name</key>
                 <string>invalid.deprecated</string>
             </dict>
