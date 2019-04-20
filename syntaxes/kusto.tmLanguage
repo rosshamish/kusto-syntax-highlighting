@@ -347,7 +347,7 @@
                     -  https://docs.microsoft.com/en-us/azure/kusto/query/functions/user-defined-functions
                 -->
                 <key>match</key>
-                <string>\b(function|with|folder|docstring)\b</string>
+                <string>\b(function|with|folder|docstring|skipvalidation)\b</string>
                 <key>name</key>
                 <string>keyword.operator.kusto</string>
             </dict>
