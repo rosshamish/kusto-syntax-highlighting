@@ -63,7 +63,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#binary-functions
                     -->
                     <key>match</key>
-                    <string>\b(tobool|todatetime|datetime|todecimal|todouble|toguid|tohex|toreal|toint|tolong|tolower|toreal|tostring|totimespan|toupper|to_utf8|translate|treepath|trim|trim_end|trim_start|url_decode|url_encode|weekofyear|welch_test|zip)(?=\W*\()</string>
+                    <string>\b(tobool|todatetime|todecimal|todouble|toguid|tohex|toreal|toint|tolong|tolower|toreal|tostring|totimespan|toupper|to_utf8|translate|treepath|trim|trim_end|trim_start|url_decode|url_encode|weekofyear|welch_test|zip)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -417,10 +417,10 @@
                 <string>constant.language</string>
             </dict>
             <dict>
-                <!-- Deprecated keywords
+                <!-- Deprecated functions
                 -->
                 <key>match</key>
-                <string>\b(array_strcat|make_dictionary|makelist|makeset|mvexpand|todynamic)\b</string>
+                <string>\b(array_strcat|make_dictionary|makelist|makeset|mvexpand|todynamic)(?=\W*\(|\b)</string>
                 <key>name</key>
                 <string>invalid.deprecated</string>
             </dict>
