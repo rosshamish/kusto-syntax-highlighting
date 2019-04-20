@@ -1,6 +1,6 @@
 # [kuskus] Kusto Language Support
 
-Support for the Kusto language syntax in Visual Studio Code.
+Kusto syntax higlighting in Visual Studio Code, for `.kusto` and `.csl.
 
 Forked from https://github.com/josin/kusto-syntax-highlighting, original author Josef Sin, modified and re-published compliant with the Apache 2.0 License. 
 

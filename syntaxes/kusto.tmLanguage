@@ -20,15 +20,6 @@
         -->
         <array>
             <dict>
-                <!-- Data types
-                  -  https://docs.microsoft.com/en-us/azure/kusto/query/scalar-data-types/
-                -->
-                <key>match</key>
-                <string>\b(bool|datetime|decimal|dynamic|guid|int|long|real|string|timespan)\b</string>
-                <key>name</key>
-                <string>storage.type</string>
-            </dict>
-            <dict>
                 <!-- Query statements
                   -  https://docs.microsoft.com/en-us/azure/kusto/query/statements
                 -->
@@ -72,7 +63,7 @@
                       -  https://docs.microsoft.com/en-us/azure/kusto/query/scalarfunctions#binary-functions
                     -->
                     <key>match</key>
-                    <string>\b(tobool|todatetime|todecimal|todouble|toguid|tohex|toreal|toint|tolong|tolower|toreal|tostring|totimespan|toupper|to_utf8|translate|treepath|trim|trim_end|trim_start|url_decode|url_encode|weekofyear|welch_test|zip)(?=\W*\()</string>
+                    <string>\b(tobool|todatetime|datetime|todecimal|todouble|toguid|tohex|toreal|toint|tolong|tolower|toreal|tostring|totimespan|toupper|to_utf8|translate|treepath|trim|trim_end|trim_start|url_decode|url_encode|weekofyear|welch_test|zip)(?=\W*\()</string>
                     <key>name</key>
                     <string>support.function</string>
                 </dict>
@@ -254,6 +245,23 @@
                     <string>variable.language</string>
                 </dict>
 
+            <dict>
+                <!-- Data types
+                  -  https://docs.microsoft.com/en-us/azure/kusto/query/scalar-data-types/
+                -->
+                <key>match</key>
+                <string>\b(bool|datetime|decimal|dynamic|guid|int|long|real|string|timespan)\b</string>
+                <key>name</key>
+                <string>storage.type</string>
+            </dict>
+
+            <dict>
+                <key>match</key>
+                <string>\b(datatable)(?=\W*\()</string>
+                <key>name</key>
+                <string>support.function</string>
+            </dict>
+
             <!-- Tabular operators
                 -  https://docs.microsoft.com/en-us/azure/kusto/query/statements
             -->
@@ -365,7 +373,7 @@
                     <key>match</key>
                     <string>\b(by|from|in|of|to|step|with)\b</string>
                     <key>name</key>
-                    <string>variable.language</string>
+                    <string>keyword.operator.word</string>
                 </dict>
 
             <dict>
