@@ -1,3 +1,9 @@
+### v1.1.4
+
+- timespans (d, h, s, ms, microsecond, tick, seconds)
+- reorder and rescope grammar for to better diversify scopes, aiming toward matching
+  the sample syntax highlighting on aka.ms/kdocs
+
 ### v1.1.3
 
 - project-away, project-rename
