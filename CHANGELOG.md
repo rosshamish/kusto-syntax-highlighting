@@ -1,5 +1,10 @@
 ## v1.1.x
 
+v1.1.6
+
+- datetime is storage.type, not support.function
+- invalid.deprecated scope works for both functions and keywords
+
 v1.1.5
 
 - data type changes
