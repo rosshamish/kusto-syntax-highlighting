@@ -234,6 +234,15 @@
                     -  https://docs.microsoft.com/en-us/azure/kusto/query/functions/user-defined-functions
                 -->
                 <key>match</key>
+                <string>(?<=let ).+(?=\W*=)</string>
+                <key>name</key>
+                <string>entity.function.name.lambda.kusto</string>
+            </dict>
+            <dict>
+                <!-- User-defined functions
+                    -  https://docs.microsoft.com/en-us/azure/kusto/query/functions/user-defined-functions
+                -->
+                <key>match</key>
                 <string>\b(with|folder|docstring|skipvalidation)\b</string>
                 <key>name</key>
                 <string>keyword.operator.kusto</string>
@@ -269,7 +278,7 @@
                 <key>match</key>
                 <string>\b(as|consume|count|datatable|distinct|evaluate|extend|externaldata|facet|find|fork|getschema|invoke|join|limit|take|lookup|make-series|mv-expand|order|sort|project-away|project-rename|project|parse|partition|print|range|reduce|render|sample|sample-distinct|search|serialize|sort|summarize|take|top-nested|top|top-hitters|union|where)\b</string>
                 <key>name</key>
-                <string>keyword.operator.kusto</string>
+                <string>keyword.operator.special.kusto</string>
             </dict>
                 <dict>
                     <!-- Tabular operators: evalute (plugins)
